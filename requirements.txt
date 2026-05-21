@@ -1,0 +1,23 @@
+# ──────────────────────────────────────────────────────────────
+# FaceGuard AI — Production-Grade Face Attendance System
+# ──────────────────────────────────────────────────────────────
+# NO C++ COMPILER NEEDED — all packages are pre-built wheels
+# ──────────────────────────────────────────────────────────────
+
+# Core Vision
+opencv-python>=4.8.1.78
+mediapipe>=0.10.9
+numpy>=1.24.3
+
+# Face Recognition — ArcFace via ONNX Runtime (no insightface)
+onnxruntime>=1.16.3
+
+# Anti-Spoofing — Silent-Face via ONNX Runtime
+# (model downloaded at runtime)
+
+# Utilities
+Pillow>=10.1.0
+tqdm>=4.66.1
+
+# Virtual camera detection (Windows-specific COM access)
+pywin32>=306;sys_platform=="win32"
